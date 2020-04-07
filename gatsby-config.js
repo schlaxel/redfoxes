@@ -5,5 +5,13 @@
  */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: 'This is fucking awesome.',
+    author: 'Alex Kiefer',
+    test: 'Fick dir'
+  },
+  plugins: [
+    'gatsby-plugin-styled-components',
+    'gatsby-plugin-netlify-cms'
+  ]
 }
