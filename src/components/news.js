@@ -54,7 +54,7 @@ const News = () => {
                         <Content>
                             <H>{edge.node.frontmatter.title}</H>
                             <Msg>{edge.node.frontmatter.message}</Msg>
-                            <Date>Veröffentlicht: {moment(edge.node.frontmatter.datemoment).format('DD.MM.YYYY - HH:mm')}</Date>
+                            <Date>Veröffentlicht: {moment(edge.node.frontmatter.date).format('DD.MM.YYYY - HH:mm')}</Date>
                         </Content>
                     )
                 })
