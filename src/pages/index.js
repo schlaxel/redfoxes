@@ -28,6 +28,7 @@ const BlogEntry = styled.section`
     background: #ccc;
     padding: 10px;
     box-sizing: border-box;
+    margin: 10px;
 `
 
 const IndexPage = () => {
