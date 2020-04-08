@@ -1,25 +1,10 @@
 import React from "react";
 import { Link } from 'gatsby';
 import { graphql, useStaticQuery } from 'gatsby';
-import Footer from '../components/footer';
-import styled, { createGlobalStyle } from 'styled-components';
+import Header from '../components/header';
+import SiteWrapper from '../components/siteWrapper';
+import styled from 'styled-components';
 
-const GlobalStyle = createGlobalStyle`
-  body {
-    margin: 0;
-    padding: 0;
-  }
-`
-
-const Wrap = styled.div`
-    width: 100%;
-    height: 100%;
-    background: #eee;
-    margin: 0;
-    padding-top: 20px;
-    box-sizing: border-box;
-    font-family: 'Helvetica';
-`
 const Content = styled.div`
     padding: 20px;
     box-sizing: border-box;
@@ -46,8 +31,8 @@ const IndexPage = () => {
     );
 
     return (
-        <Wrap>
-            <GlobalStyle />
+        <SiteWrapper>
+            <Header />
             <Content>
                 <h1>Hello what the hell?</h1>
                 <Link to="/about">About</Link>
@@ -63,8 +48,7 @@ const IndexPage = () => {
                     })
                 }
             </Content>
-            <Footer />
-        </Wrap>
+        </SiteWrapper>
     )
 };
 

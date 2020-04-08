@@ -17,3 +17,13 @@ collections:
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
       - {label: "Rating (scale of 1-5)", name: "rating", widget: "number"}
       - {label: "Body", name: "body", widget: "markdown"}
+      
+  - name: 'news'
+    label: 'News'
+    folder: '_posts/news'
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Mesasge", name: "message", widget: "string"}
+      - {label: "Image", name: "thumbnail", widget: "image"}

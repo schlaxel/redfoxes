@@ -7,8 +7,7 @@
 module.exports = {
   siteMetadata: {
     title: 'This is fucking awesome.',
-    author: 'Alex Kiefer',
-    test: 'Fick dir'
+    author: 'Alex Kiefer'
   },
   plugins: [
     'gatsby-plugin-styled-components',
@@ -31,11 +30,26 @@ module.exports = {
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 590,
+              maxWidth: 1920,
             },
           },
         ],
       },
     },
+    {
+      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      options: {
+        fonts: [
+          {
+            family: `Fjalla One`,
+            variants: [`400`]
+          },
+          {
+            family: 'Source Sans Pro',
+            variants: ['400']
+          }
+        ],
+      },
+    }
   ]
 }
