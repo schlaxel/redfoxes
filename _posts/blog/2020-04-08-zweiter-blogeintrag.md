@@ -7,3 +7,7 @@ rating: 4
 path: second
 ---
 Dies ist ein zweiter Blogeintrag.
+
+Hier sollte man jetzt ein Bild sehen:
+
+![](/images/uploads/bildschirmfoto-2020-03-21-um-12.17.15.png "Bild")
