@@ -22,6 +22,14 @@ const A = styled.a`
         text-decoration: underline;
     }
 `
+const SubHeading = styled.h2`
+  color: #ddd;
+  font-family: 'Fjalla One';
+  display: block;
+  margin: 0;
+  padding: 20px 0 0 0;
+  box-sizing: border-box;
+`
 
 const Copy = styled.div`
     margin-top: 10px;
@@ -32,7 +40,10 @@ const Footer = () => (
     <Wrapper>
         <Drinking src={drinking} alt="Drinking Greif" />
         <A target="_blank" href="https://kiefer.media/impressum">Impressum</A>
-        <Copy>Red Foxes United - 2007</Copy>
+        <Copy>Red Foxes United</Copy>
+        <SubHeading>
+          ⚽🌭🍺 since 2007
+        </SubHeading>
     </Wrapper>
 );
 

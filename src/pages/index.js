@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from 'gatsby';
 import { graphql, useStaticQuery } from 'gatsby';
 import Header from '../components/header';
+import News from '../components/news';
 import SiteWrapper from '../components/siteWrapper';
 import styled from 'styled-components';
 
@@ -9,44 +10,43 @@ const Content = styled.div`
     padding: 20px;
     box-sizing: border-box;
 `
-const BlogEntry = styled.section`
-    background: #ccc;
-    padding: 10px;
-    box-sizing: border-box;
-    margin: 10px;
+const Heading = styled.h1`
+  color: #222;
+  font-family: 'Fjalla One';
+  text-transform: uppercase;
+  font-size: 3.5em;
+  margin: 0;
+  @media (max-width: 500px) {
+    font-size: 2.5em;
+  }
+  @media (max-width: 350px) {
+    font-size: 2em;
+  }
+  display: block;
+  margin: 0;
+  padding: 20px 0 0 0;
+  background: #fff;
+`
+
+const P = styled.p`
+  color: #951411;
+  max-width: 450px;
+  margin: auto;
+  padding: 10px 0;
+  font-size: 1em;
 `
 
 const IndexPage = () => {
-    const data = useStaticQuery(graphql`
-        query {
-            allMarkdownRemark {
-                edges {
-                    node {
-                        frontmatter {title date layout rating thumbnail}
-                        html
-                    }
-                }
-            }
-        }`
-    );
-
     return (
         <SiteWrapper>
             <Header />
-            <Content>
-                <h1>Hello what the hell?</h1>
-                <Link to="/about">About</Link>
-                <h2>Blog</h2>
-                { 
-                    data.allMarkdownRemark.edges.map((edge) => {
-                        return (
-                            <BlogEntry>
-                                <h1>{edge.node.frontmatter.title}</h1>
-                                <p>{edge.node.frontmatter.date}</p>
-                            </BlogEntry>
-                        )
-                    })
-                }
+                <Content>
+                <Heading>
+                    Red Foxes United
+                </Heading>
+                <P>SC Freiburg supporter. Wir unterstützen den Sportclub bei Heim - und Auswärtsspielen. Mal mehr, aber eher weniger
+                    organisiert. In Zukunft möchten wir das ändern.</P>
+                <News />
             </Content>
         </SiteWrapper>
     )
