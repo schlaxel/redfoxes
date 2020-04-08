@@ -12,6 +12,14 @@ module.exports = {
   },
   plugins: [
     'gatsby-plugin-styled-components',
-    'gatsby-plugin-netlify-cms'
+    'gatsby-plugin-netlify-cms',
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `markdown-pages`,
+        path: `${__dirname}/_posts/blog`,
+      },
+    },
+    `gatsby-transformer-remark`,
   ]
 }
