@@ -1,9 +1,4 @@
 const path = require(`path`)
-exports.onCreateNode = ({ node, actions }) => {
-    const { createNoteField } = actions
-
-    console.log(JSON.stringify(node, undefined, 4));
-}
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
@@ -30,10 +25,13 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return
   }
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+      console.log('Fotze', node.frontmatter.path);
     createPage({
       path: node.frontmatter.path,
       component: blogPostTemplate,
-      context: {}, // additional data can be passed via context
+      context: {
+          slug: node.frontmatter.path
+      }, // additional data can be passed via context
     })
   })
 }
