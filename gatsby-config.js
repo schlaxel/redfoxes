@@ -13,6 +13,7 @@ module.exports = {
     'gatsby-plugin-styled-components',
     'gatsby-plugin-netlify-cms',
     `gatsby-plugin-sharp`,
+    'gatsby-transformer-sharp',
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -56,6 +57,12 @@ module.exports = {
             variants: ['400']
           }
         ],
+      },
+    },
+    {
+      resolve: `gatsby-source-instagram`,
+      options: {
+        username: `redfoxesunited`,
       },
     }
   ]

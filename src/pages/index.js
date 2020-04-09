@@ -1,10 +1,10 @@
 import React from "react";
-import { Link } from 'gatsby';
-import { graphql, useStaticQuery } from 'gatsby';
 import Header from '../components/header';
+import Muenster from '../components/muenster';
 import News from '../components/news';
 import SiteWrapper from '../components/siteWrapper';
 import styled from 'styled-components';
+import Instagram from "../components/instagram";
 
 const Content = styled.div`
     padding: 20px;
@@ -48,6 +48,8 @@ const IndexPage = () => {
                     organisiert. In Zukunft möchten wir das ändern.</P>
                 <News />
             </Content>
+            <Muenster />
+            <Instagram />
         </SiteWrapper>
     )
 };
