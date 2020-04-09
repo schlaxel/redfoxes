@@ -42,7 +42,10 @@ const Footer = () => (
         <A target="_blank" href="https://kiefer.media/impressum">Impressum</A>
         <Copy>Red Foxes United</Copy>
         <SubHeading>
-          ⚽🌭🍺 since 2007
+          <span role="img" aria-label="Fussball">⚽</span>
+          <span role="img" aria-label="Bratwurst">🌭</span>
+          <span role="img" aria-label="Bier">🍺</span>
+           since 2007
         </SubHeading>
     </Wrapper>
 );

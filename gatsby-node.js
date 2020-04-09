@@ -33,12 +33,42 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return
   }
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-      console.log('Fotze', node.frontmatter.path);
     createPage({
       path: node.frontmatter.path,
       component: blogPostTemplate,
       context: {
           slug: node.frontmatter.path
+      }, // additional data can be passed via context
+    })
+  })
+}
+
+exports.createPages = async ({ actions, graphql, reporter }) => {
+  // create Pages for instagram posts.
+  const { createPage } = actions
+  const instaTemplate = path.resolve(`src/templates/instaTemplate.js`)
+  const result = await graphql(`
+    {
+      allInstaNode {
+        edges {
+          node {
+            id
+          }
+        }
+      }
+    }
+  `)
+  // Handle errors
+  if (result.errors) {
+    reporter.panicOnBuild(`Error while running GraphQL query.`)
+    return
+  }
+  result.data.allInstaNode.edges.forEach(({ node }) => {
+    createPage({
+      path: `/insta/${node.id}`,
+      component: instaTemplate,
+      context: {
+          slug: node.id
       }, // additional data can be passed via context
     })
   })

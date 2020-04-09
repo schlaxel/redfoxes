@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import Img from "gatsby-image";
-import { graphql, useStaticQuery } from 'gatsby';
+import { Link, graphql, useStaticQuery } from 'gatsby';
 
 
 const Wrapper = styled.div`
@@ -15,10 +15,11 @@ const Wrapper = styled.div`
     flex-direction: row;
     flex-wrap: wrap;
 `
-const ImageWrapper = styled.div`
+const ImageWrapper = styled(Link)`
     width: 100%;
     border-radius: 7px;
     overflow: hidden;
+    display: block;
 `
 const ImageOuterWrapper = styled.div`
     max-width: 400px;
@@ -57,7 +58,7 @@ const Instagram = () => {
                 data.allInstaNode.edges.map((edge) => {
                     return (
                         <ImageOuterWrapper>
-                            <ImageWrapper>
+                            <ImageWrapper to={`/insta/${edge.node.id}`} state={{ modal: true }}>
                                 <Img fluid={edge.node.localFile.childImageSharp.fluid} />
                             </ImageWrapper>
                         </ImageOuterWrapper>
