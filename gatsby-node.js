@@ -5,6 +5,7 @@ exports.onCreateNode =({ node, getNode, boundActionCreators }) => {
   if (node.internal.type === 'MarkdownRemark') {
       const { createNodeField } = boundActionCreators;
       node.collection = getNode(node.parent).sourceInstanceName;
+      console.log(node);
   }
 }
 
@@ -33,6 +34,8 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return
   }
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    return console.log(node.frontmatter.path, undefined, 4)
+    console.log('FOTZE')
     createPage({
       path: node.frontmatter.path,
       component: blogPostTemplate,

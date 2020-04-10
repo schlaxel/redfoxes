@@ -37,4 +37,5 @@ collections:
         file: "_site/content/impressum.md"
         fields:
           - {label: Title, name: title, widget: string}
+          - {label: "Path to site", name: "path", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
