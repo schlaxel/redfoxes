@@ -2,6 +2,7 @@ import React from "react";
 import Header from '../components/header';
 import Muenster from '../components/muenster';
 import News from '../components/news';
+import NextGame from '../components/bundesliga/nextGame';
 import SiteWrapper from '../components/siteWrapper';
 import styled from 'styled-components';
 import Instagram from "../components/instagram";
@@ -50,6 +51,7 @@ const IndexPage = () => {
             </Content>
             <Muenster />
             <Instagram />
+            <NextGame />
         </SiteWrapper>
     )
 };

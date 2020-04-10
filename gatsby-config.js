@@ -94,6 +94,13 @@ module.exports = {
           contentLabel: `Modal`
         }
       }
+    },
+    {
+      resolve: "gatsby-source-custom-api",
+      options: {
+          url: "https://www.openligadb.de/api/getnextmatchbyleagueteam/4362/112",
+          rootKey: 'nextGame'
+      }
     }
   ]
 }

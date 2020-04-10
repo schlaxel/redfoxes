@@ -1,7 +1,6 @@
 import React from 'react';
 import styled, { css } from 'styled-components';
 import { graphql, Link } from 'gatsby';
-import { ModalRoutingContext } from 'gatsby-plugin-modal-routing'
 import Img from "gatsby-image";
 
 const Wrapper = styled.div`
