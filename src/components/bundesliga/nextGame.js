@@ -73,15 +73,19 @@ const TeamName = styled.span`
     color: #fff;
     font-size: 1.5em;
     text-transform: uppercase;
+    font-family: 'Fjalla One';
     @media (max-width: 550px) {
         font-size: 1.2em;
     }
 `
 const Date = styled.span`
     color: #fff;
-    padding: 20px;
+    padding: 5px 10px;
+    font-family: 'Fjalla One';
     display: inline-block;
-    font-size: 1.5em;
+    font-size: 1.3em;
+    margin: 10px;
+    border-bottom: dashed 2px #fff;
 `
 
 const NextGame = () => {

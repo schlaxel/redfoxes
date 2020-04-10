@@ -1,8 +1,10 @@
 import React from "react";
+import { Link } from 'gatsby';
 import Header from '../components/header';
 import Muenster from '../components/muenster';
 import News from '../components/news';
 import NextGame from '../components/bundesliga/nextGame';
+import Standings from '../components/bundesliga/standings';
 import SiteWrapper from '../components/siteWrapper';
 import styled from 'styled-components';
 import Instagram from "../components/instagram";
@@ -52,6 +54,7 @@ const IndexPage = () => {
             <Muenster />
             <Instagram />
             <NextGame />
+            <Standings />
         </SiteWrapper>
     )
 };

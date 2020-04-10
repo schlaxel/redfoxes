@@ -101,6 +101,13 @@ module.exports = {
           url: "https://www.openligadb.de/api/getnextmatchbyleagueteam/4362/112",
           rootKey: 'nextGame'
       }
+    },
+    {
+      resolve: "gatsby-source-custom-api",
+      options: {
+          url: "https://www.openligadb.de/api/getbltable/bl1/2019",
+          rootKey: 'tabelle'
+      }
     }
   ]
 }
