@@ -8,6 +8,7 @@ const Wrapper = styled.div`
     padding: 20px;
     background: #A31602;
     box-sizing: border-box;
+    max-width: 1000px;
 `
 const WrapperInner = styled.div`
     max-width: 700px;
@@ -25,7 +26,6 @@ const Team = styled.div`
 `
 const Elem = styled.span`
 `
-
 
 const Standings = () => {
     const data = useStaticQuery(graphql`
