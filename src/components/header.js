@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import styled from 'styled-components';
 import logo from '../img/rfu_logo_sm.png';
 import dreisam from '../img/dreisamstadion_white.png';
+import Animated from '../animated';
 
 const Wrapper = styled.header`
 
@@ -61,6 +62,7 @@ const Header = () => {
 
   return (
     <Wrapper>
+      <Animated />
       <HeadingWrapper>
         <LogoWrap scrollTop={scrollTop}>
           <Logo className="animated fadeInUp slower" src={logo} alt="Red Foxes United Logo" />

@@ -59,7 +59,7 @@ const Standings = () => {
                                 {index+1}. {edge.node.ShortName === 'RBL Leipzig' ? 'Leipzig' : edge.node.ShortName}
                             </Elem>
                             <Elem style={{ width: 70, textAlign: 'center'}}>{edge.node.Won} - {edge.node.Draw} - {edge.node.Lost}</Elem>
-                            <Elem>{edge.node.Goals}:{edge.node.GoalDiff}</Elem>
+                            <Elem>{edge.node.GoalDiff}</Elem>
                             <Elem>{edge.node.Points} Pkt.</Elem>
                         </Team>
                     )

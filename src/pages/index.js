@@ -11,6 +11,7 @@ import Instagram from "../components/instagram";
 const Content = styled.div`
     padding: 20px;
     box-sizing: border-box;
+    background: #fff;
 `
 const Heading = styled.h1`
   color: #222;
