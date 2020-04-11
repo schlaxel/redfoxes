@@ -37,6 +37,24 @@ const Copy = styled.div`
     margin-top: 10px;
     color: #fff;
 `
+const Hr = styled.hr`
+    width: 120px;
+    height: 3px;
+    border: 0;
+    border-top: dashed 3px rgba(255,255,255,0.5);
+    margin: 30px auto;
+`
+const CreditToMyself = styled.a`
+    display: block;
+    color: #ddd;
+    font-size: 1.2em;
+`
+const Gari = styled.span`
+    display: block;
+    font-size: 1em;
+    color: #ddd;
+    margin-top: 5px;
+`
 
 const Footer = () => (
     <Wrapper>
@@ -46,9 +64,12 @@ const Footer = () => (
         <SubHeading>
           <span role="img" aria-label="Fussball">⚽</span>
           <span role="img" aria-label="Bratwurst">🌭</span>
-          <span role="img" aria-label="Bier">🍺</span>
-           since 2007
+          <span role="img" aria-label="Bier">🍺 </span> 
+           seit 2007
         </SubHeading>
+        <Hr />
+        <CreditToMyself target="_blank" href="https://www.kiefer.media">Kiefer.Media</CreditToMyself>
+        <Gari>Gari lifestyle since 1992</Gari>
     </Wrapper>
 );
 
