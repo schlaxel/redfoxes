@@ -11,7 +11,7 @@ const Wrapper = styled(Link)`
     right: 20px;
     bottom: 20px; 
     background: #951411;
-    border-radius: 40px;
+    border-radius: 44px;
     display: flex;
     align-items: center;
     justify-content: center;
