@@ -1,6 +1,6 @@
 import React from 'react';
-import styled, { css } from 'styled-components';
-import { graphql, Link } from 'gatsby';
+import styled from 'styled-components';
+import { graphql } from 'gatsby';
 import Img from "gatsby-image";
 import BackBtn from '../components/backBtn';
 

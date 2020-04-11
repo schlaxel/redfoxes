@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import drinking from '../img/drinking_greif_op.png';
+import { Link } from 'gatsby';
 
 const Wrapper = styled.footer`
     background: #950210;
@@ -13,7 +14,7 @@ const Drinking = styled.img`
     height: auto;
     width: 90%;
 `
-const A = styled.a`
+const A = styled(Link)`
     color: #fff;
     display: block;
     margin-top: 20px;
@@ -39,7 +40,7 @@ const Copy = styled.div`
 const Footer = () => (
     <Wrapper>
         <Drinking src={drinking} alt="Drinking Greif" />
-        <A target="_blank" href="https://kiefer.media/impressum">Impressum</A>
+        <A to="/impressum">Impressum</A>
         <Copy>Red Foxes United</Copy>
         <SubHeading>
           <span role="img" aria-label="Fussball">⚽</span>
