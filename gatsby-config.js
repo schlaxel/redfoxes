@@ -6,7 +6,7 @@
 
 module.exports = {
   siteMetadata: {
-    title: 'Red Foxes United',
+    title: 'Red Foxes United - Freiburg',
     author: 'Red Foxes United',
     siteUrl: `https://www.rfu-freiburg.de`,
     description: 'SC Freiburg Fans seit Geburt. Fußball & Bier gemeinsam als RFU seit 2007. Wir unterstützen den Sportclub daheim und auswärts.'
