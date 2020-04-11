@@ -10,16 +10,15 @@ const Wrapper = styled(Link)`
     position: fixed;
     right: 20px;
     bottom: 20px; 
-    background: #fff;
-    border-radius: 44px;
+    background: #951411;
+    border-radius: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: #eee;
-    border: solid 2px #333;
+    border: solid 2px #fff;
 `
 const Ico = styled(Times)`
-    color: #951411;
+    color: #fff;
 `
 
 const BackBtn = () => {

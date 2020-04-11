@@ -6,14 +6,23 @@
 
 module.exports = {
   siteMetadata: {
-    title: 'This is fucking awesome.',
-    author: 'Alex Kiefer'
+    title: 'Red Foxes United',
+    author: 'Red Foxes United',
+    siteUrl: `https://www.rfu-freiburg.de`,
+    description: 'SC Freiburg Fans seit Geburt. Fußball & Bier gemeinsam als RFU seit 2007. Wir unterstützen den Sportclub daheim und auswärts.'
   },
   plugins: [
     'gatsby-plugin-styled-components',
     'gatsby-plugin-netlify-cms',
     `gatsby-plugin-sharp`,
     'gatsby-transformer-sharp',
+    `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        exclude: [`/admin`]
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -100,7 +109,7 @@ module.exports = {
           },
           contentLabel: `Modal`,
           shouldCloseOnOverlayClick: true
-        }
+        },
       }
     },
     {
@@ -116,6 +125,18 @@ module.exports = {
           url: "https://www.openligadb.de/api/getbltable/bl1/2019",
           rootKey: 'tabelle'
       }
+    },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Red Foxes United - Freiburg`,
+        short_name: `Red Foxes United`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#951411`,
+        display: `browser`,
+        icon: `src/img/icon.png`
+      },
     }
   ]
 }

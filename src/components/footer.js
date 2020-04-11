@@ -8,6 +8,7 @@ const Wrapper = styled.footer`
     padding: 100px 20px 50px 20px;
     box-sizing: border-box;
     text-align: center;
+    margin-top: 50px;
 `
 const Drinking = styled.img`
     max-width: 150px;

@@ -7,6 +7,7 @@ import Standings from '../components/bundesliga/standings';
 import SiteWrapper from '../components/siteWrapper';
 import styled from 'styled-components';
 import Instagram from "../components/instagram";
+import SEO from '../components/seo';
 
 const Content = styled.div`
     padding: 20px;
@@ -55,6 +56,7 @@ const IndexPage = () => {
             <Instagram />
             <NextGame />
             <Standings />
+            <SEO />
         </SiteWrapper>
     )
 };

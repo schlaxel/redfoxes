@@ -4,6 +4,7 @@ import PageHeader from '../components/pageHeader';
 import BackBtn from '../components/backBtn';
 import styled from 'styled-components';
 import { graphql } from 'gatsby';
+import SEO from '../components/seo';
 
 const Body = styled.div`
     padding: 20px;
@@ -20,6 +21,7 @@ const Impressum = (props) => {
             <h1>{props.data.markdownRemark.frontmatter.title}</h1>
             <Body dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }} />
             <BackBtn />
+            <SEO title="Red Foxes United - Impressum" />
         </SiteWrapper>
     )
 };
