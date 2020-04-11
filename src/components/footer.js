@@ -9,6 +9,9 @@ const Wrapper = styled.footer`
     box-sizing: border-box;
     text-align: center;
     margin-top: 50px;
+    @media (max-width: 1000px) {
+        margin-top: 0px;
+    }
 `
 const Drinking = styled.img`
     max-width: 150px;
