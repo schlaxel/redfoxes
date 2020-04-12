@@ -17,6 +17,7 @@ module.exports = {
     `gatsby-plugin-sharp`,
     'gatsby-transformer-sharp',
     `gatsby-plugin-react-helmet`,
+    'gatsby-background-image',
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
@@ -45,16 +46,31 @@ module.exports = {
       },
     },
     {
+    resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/static/images/uploads`,
+      },
+    },
+    {
+      resolve: `gatsby-plugin-netlify-cms-paths`,
+      options: {
+        // Path to your Netlify CMS config file
+        cmsConfig: `/static/admin/config.yml`
+      }
+    },
+    {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          `gatsby-plugin-netlify-cms-paths`,
           {
             resolve: `gatsby-remark-relative-images`,
           },
           {
             resolve: `gatsby-remark-images`,
             options: {
-              maxWidth: 1920,
+              maxWidth: 1000,
             },
           },
         ],
