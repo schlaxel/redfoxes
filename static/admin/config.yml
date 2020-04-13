@@ -37,3 +37,12 @@ collections:
           - {label: Title, name: title, widget: string}
           - {label: "Path to site", name: "path", widget: "string"}
           - {label: "Body", name: "body", widget: "markdown"}
+      
+      - label: "About"
+        name: "about"
+        file: "_site/content/about.md"
+        fields: 
+          - {label: Title, name: title, widget: string}
+          - {label: "Path to site", name: "path", widget: "string"}
+          - {label: "Featured Image", name: "featuredImg", widget: "image"}
+          - {label: "Body", name: "body", widget: "markdown"}

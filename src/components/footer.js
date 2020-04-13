@@ -82,6 +82,7 @@ const Footer = () => (
         <Nav>
             <A to="/">Home</A>
             <A to="/blog">Blog</A>
+            <A to="/about">About</A>
             <A to="/impressum">Impressum</A>
         </Nav>
         <Social>
