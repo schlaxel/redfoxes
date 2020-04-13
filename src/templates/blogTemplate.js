@@ -6,6 +6,7 @@ import Img from 'gatsby-image';
 import SiteWrapper from '../components/siteWrapper';
 import BackBtn from '../components/backBtn';
 import C from '../colors';
+import SEO from '../components/seo';
 import divider from '../img/dreisamstadion_divider_grey.png';
 
 const Wrapper = styled.div`
@@ -104,6 +105,12 @@ const BlogTemplate = (props) => {
             <Content dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }} />
           </Inner>
         </Wrapper>
+        <SEO 
+          title={`RFU - ${props.data.markdownRemark.frontmatter.title}`} 
+          path={`/blog/${props.data.markdownRemark.frontmatter.path}`}
+          image={props.data.markdownRemark.frontmatter.thumbnail.publicURL}
+          description={props.data.markdownRemark.excerpt}
+        />
         <BackBtn />
       </SiteWrapper>
     )
@@ -114,11 +121,13 @@ export const pageQuery = graphql`
     markdownRemark(frontmatter: { path: { eq: $slug } }) {
       html
       timeToRead
+      excerpt
       frontmatter {
         date
         path
         title
-        thumbnail { 
+        thumbnail {
+          publicURL 
           childImageSharp {
               fluid(maxWidth: 1500) {
                   ...GatsbyImageSharpFluid_noBase64

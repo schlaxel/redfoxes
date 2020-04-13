@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { FacebookWithCircle, InstagramWithCircle } from 'styled-icons/entypo-social';
 import drinking from '../img/drinking_greif_op.png';
 import { Link } from 'gatsby';
 
@@ -21,7 +22,7 @@ const Drinking = styled.img`
 const A = styled(Link)`
     color: #fff;
     display: block;
-    margin-top: 20px;
+    margin: 20px 5px 0 5px;
     font-family: 'fjalla one';
     &:hover, &:active, &:visited {
         color: #fff;
@@ -60,11 +61,33 @@ const Gari = styled.span`
     color: #ddd;
     margin-top: 5px;
 `
+const Nav = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 300px;
+    margin: auto;
+`
+const Social = styled.div`
+`
+const SA = styled.a`
+    color: #fff;
+    padding: 20px 5px 5px 5px;
+    display: inline-block;
+`
 
 const Footer = () => (
     <Wrapper>
         <Drinking src={drinking} alt="Drinking Greif" />
-        <A to="/impressum">Impressum</A>
+        <Nav>
+            <A to="/">Home</A>
+            <A to="/blog">Blog</A>
+            <A to="/impressum">Impressum</A>
+        </Nav>
+        <Social>
+            <SA href="https://instagram.com/redfoxesunited" target="_blank"><InstagramWithCircle size="40" /></SA>
+            <SA href="https://facebook.com/redfoxesunited" target="_blank"><FacebookWithCircle size="40" /></SA>
+        </Social>
         <Copy>Red Foxes United</Copy>
         <SubHeading>
           <span role="img" aria-label="Fussball">⚽</span>

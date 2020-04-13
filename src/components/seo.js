@@ -20,7 +20,7 @@ const SEO = (props) => {
     const seo = {
         title: props.title || data.site.siteMetadata.title,
         description: props.description || data.site.siteMetadata.description,
-        url: props.siteUrl || data.site.siteMetadata.siteUrl,
+        url: props.path ? `${data.site.siteMetadata.siteUrl}${props.path}` : data.site.siteMetadata.siteUrl,
         image: props.image || ogimage
     }
     return (

@@ -2,8 +2,8 @@ import React from 'react';
 import SiteWrapper from '../components/siteWrapper';
 import PageHeader from '../components/pageHeader';
 import BlogPosts from '../components/blog/blogPosts';
-import Footer from '../components/footer';
 import styled from 'styled-components';
+import BackBtn from '../components/backBtn';
 import Colors from '../colors';
 
 const H = styled.h1`
@@ -14,9 +14,9 @@ const H = styled.h1`
 const BlogPage = () => (
     <SiteWrapper>
         <PageHeader />
-        <H>Blog</H>
+        <H>Unser Senf landet nicht nur uff'm Würstle:</H>
         <BlogPosts />
-        <Footer />
+        <BackBtn />
     </SiteWrapper>
 );
 
