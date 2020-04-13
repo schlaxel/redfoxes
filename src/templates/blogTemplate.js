@@ -25,10 +25,12 @@ const Inner = styled.div`
 const HeadingDate = styled.div`
   display: flex;
   align-items: center;
+  background: #1d1d1d;
+  padding-bottom: 10px;
 `
 
 const H1 = styled.h1`
-  color: ${C.red1};
+  color: #eee;
   margin: 0;
   text-align: left;
   padding: 20px 10px 10px 10px;
@@ -42,7 +44,7 @@ const Date = styled.p`
 `
 const Day = styled.div`
   margin: auto;
-  background: #1d1d1d;
+  background: ${C.red1};
   color: #fff;
   padding: 5px;
   text-align: center;
@@ -87,12 +89,7 @@ const BlogTemplate = (props) => {
       <SiteWrapper>
         <Wrapper>
           <Inner>
-            <ImageWrapper>
-              <Img 
-                fluid={props.data.markdownRemark.frontmatter.thumbnail.childImageSharp.fluid}
-                alt={props.data.markdownRemark.frontmatter.title}
-              />
-            </ImageWrapper>
+            <DivideImage src={divider} />
             <HeadingDate>
               <Date>
                 <Day>{moment(props.data.markdownRemark.frontmatter.date).format('DD')}</Day>
@@ -101,7 +98,12 @@ const BlogTemplate = (props) => {
               </Date>
               <H1>{props.data.markdownRemark.frontmatter.title}</H1>
             </HeadingDate>
-            <DivideImage src={divider} />
+            <ImageWrapper>
+              <Img 
+                fluid={props.data.markdownRemark.frontmatter.thumbnail.childImageSharp.fluid}
+                alt={props.data.markdownRemark.frontmatter.title}
+              />
+            </ImageWrapper>
             <Content dangerouslySetInnerHTML={{ __html: props.data.markdownRemark.html }} />
           </Inner>
         </Wrapper>

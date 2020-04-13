@@ -7,7 +7,7 @@ import SinglePost from './singlePost';
 const Wrapper = styled.div`
     width: 100%;
     max-width: 1000px;
-    background: #ddd;
+    background: #1d1d1d;;
     box-sizing: border-box;
     padding: 20px;
     display: flex;
