@@ -23,6 +23,8 @@ const Body = styled.div`
     h1, h2 {
         font-family: 'Source Sans Pro'
     }
+    max-width: 900px;
+    margin: auto;    
 `
 
 const About = (props) => (
