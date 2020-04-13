@@ -29,9 +29,10 @@ const SEO = (props) => {
             <title>{ seo.title }</title>
             <meta name="description" content={seo.description} />
             <meta property="og:url" content={seo.url} />
+            <meta name="image" content={`${seo.url}${seo.image}`} />
             {seo.title && <meta property="og:title" content={seo.title} />}
             {seo.description && <meta property="og:description" content={seo.description} />}
-            <meta property='og:image' content={ seo.image } />
+            <meta property='og:image' content={`${seo.url}${seo.image}`} />
         </Helmet>
     )
 };

@@ -7,6 +7,7 @@ import Standings from '../components/bundesliga/standings';
 import SiteWrapper from '../components/siteWrapper';
 import styled from 'styled-components';
 import Instagram from "../components/instagram";
+import BlogPosts from '../components/blog/blogPosts';
 import SEO from '../components/seo';
 
 const Content = styled.div`
@@ -54,6 +55,7 @@ const IndexPage = () => {
             </Content>
             <Muenster />
             <Instagram />
+            <BlogPosts />
             <NextGame />
             <Standings />
             <SEO />

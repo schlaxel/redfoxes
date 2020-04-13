@@ -6,13 +6,15 @@ import SinglePost from './singlePost';
 
 const Wrapper = styled.div`
     width: 100%;
-    background: ${C.red1};
+    max-width: 1000px;
+    background: #ddd;
     box-sizing: border-box;
     padding: 20px;
     display: flex;
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+    margin: auto;
 `
 
 const BlogPosts = () => {
