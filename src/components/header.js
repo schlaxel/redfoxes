@@ -25,7 +25,7 @@ const Logo = styled.img`
 const LogoWrap = styled.div`
   width: ${props => 400 - props.scrollTop + 'px'};
   height: ${props => 400 - props.scrollTop + 'px'};
-  position: fixed;
+  position: absolute;
   left: 50%;
   top: ${props => 20 - props.scrollTop + 'px'};
   margin-left: ${props => -200 + (props.scrollTop / 2) + 'px'};

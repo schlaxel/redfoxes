@@ -22,6 +22,7 @@ const A = styled(Link)`
     color: #fff;
     display: block;
     margin-top: 20px;
+    font-family: 'fjalla one';
     &:hover, &:active, &:visited {
         color: #fff;
         text-decoration: underline;
@@ -51,6 +52,7 @@ const CreditToMyself = styled.a`
     display: block;
     color: #ddd;
     font-size: 1.2em;
+    font-family: 'fjalla one';
 `
 const Gari = styled.span`
     display: block;

@@ -6,13 +6,11 @@ const GlobalStyle = createGlobalStyle`
   body {
     margin: 0;
     padding: 0;
-    font-family: 'Fjalla One';
+    font-family: 'Source Sans Pro';
   }
-  p {
-      font-family: 'Source Sans Pro';
-  }
-  h1 {
+  h1, h2, h3, h4, h5, h6 {
       text-align: center;
+      font-family: 'Fjalla One';
   }
 `
 
@@ -29,6 +27,7 @@ const TopBorder = styled.div`
   position: fixed;
   left: 0;
   top: 0;
+  z-index: 9999;
 `
 
 const SiteWrapper = ({ children }) => (
