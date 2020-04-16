@@ -4,7 +4,7 @@ path: impressum
 ---
 ## 1. Name und Anschrift des Verantwortlichen
 
-* info@rfu-freiburg.de
+* salli@rfu-freiburg.de
 * Red Foxes United
 
 Verantwortliche i.S.d. § 55 Abs. 2 RStV:
@@ -189,7 +189,7 @@ letzteren Fall haben Sie ein generelles Widerspruchsrecht, das ohne Angabe
 einer besonderen Situation von uns umgesetzt wird.
 
 Möchten Sie von Ihrem Widerrufs- oder Widerspruchsrecht Gebrauch machen,
-genügt eine E-Mail an post@kanzlei-spreewald.de.
+genügt eine E-Mail an salli@rfu-freiburg.de.
 
 ## 7. Datensicherheit
 
