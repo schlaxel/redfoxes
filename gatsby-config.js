@@ -98,13 +98,6 @@ module.exports = {
       }
     },
     {
-      resolve: `gatsby-source-instagram`,
-      options: {
-        username: `redfoxesunited`,
-        access_token: 'IGQVJVLUlEMG53TGlwdzE2am4yVmdyZA2dTMnNMb0p4RThCcXR0UEFmNXRRazJxZATJRb0JvMkFlMXBOYW1GX0FBMmRKOXAxeTh0RDBjNWpacHEtOEJyWHlYVWo5UDJDU0d3bTR4Y3ZAENjR3Wkx3ODNtZAgZDZD'
-      },
-    },
-    {
       resolve: `gatsby-plugin-modal-routing`,
       options: {
         modalProps: {
