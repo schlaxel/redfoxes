@@ -30,7 +30,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           }
         }
       }
-      allInstaNode {
+      allInstagramContent {
         edges {
           node {
             id
