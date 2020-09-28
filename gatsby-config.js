@@ -92,6 +92,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-instagram-all`,
+      options: {
+        access_token: "IGQVJVLUlEMG53TGlwdzE2am4yVmdyZA2dTMnNMb0p4RThCcXR0UEFmNXRRazJxZATJRb0JvMkFlMXBOYW1GX0FBMmRKOXAxeTh0RDBjNWpacHEtOEJyWHlYVWo5UDJDU0d3bTR4Y3ZAENjR3Wkx3ODNtZAgZDZD"
+      }
+    },
+    {
       resolve: `gatsby-source-instagram`,
       options: {
         username: `redfoxesunited`,
@@ -132,14 +138,14 @@ module.exports = {
     {
       resolve: "gatsby-source-custom-api",
       options: {
-          url: "https://www.openligadb.de/api/getnextmatchbyleagueteam/4362/112",
+          url: "https://www.openligadb.de/api/getnextmatchbyleagueteam/4442/112",
           rootKey: 'nextGame'
       }
     },
     {
       resolve: "gatsby-source-custom-api",
       options: {
-          url: "https://www.openligadb.de/api/getbltable/bl1/2019",
+          url: "https://www.openligadb.de/api/getbltable/bl1/2020",
           rootKey: 'tabelle'
       }
     },
