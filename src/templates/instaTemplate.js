@@ -51,12 +51,12 @@ const InstaTemplate = (props) => {
                         // style={ /*{ margin: '0rem', maxHeight: 'calc(80vh - 5em)' } */}
                         style={{ width: '100%', maxHeight: '100%' }}
                         imgStyle={{ objectFit: 'contain' }} 
-                        fluid={props.data.instaNode.localFile.childImageSharp.fluid} 
+                        fluid={props.data.instagramContent.localImage.childImageSharp.fluid} 
                     />
                 </ImgWrapper>
             </ImageOuter>
             <Caption  className="animated fadeInDown">
-                <H>{props.data.instaNode.caption}</H>
+                <H>{props.data.instagramContent.caption}</H>
             </Caption>
             <BackBtn />
         </Wrapper>
@@ -65,10 +65,10 @@ const InstaTemplate = (props) => {
 
 export const pageQuery = graphql`
   query($slug: String!) {
-    instaNode(id: { eq: $slug }) {
+    instagramContent(id: { eq: $slug }) {
       caption
       id
-      localFile {
+      localImage {
           childImageSharp {
               fluid(maxWidth: 700, maxHeight: 700) {
                   ...GatsbyImageSharpFluid
