@@ -31,15 +31,13 @@ const ImageOuterWrapper = styled.div`
 const Instagram = () => {
     const data = useStaticQuery(graphql`
         query {
-            allInstaNode(limit: 9) {
+            allInstagramContent(limit: 9) {
                 edges {
                     node {
                         id
-                        username
-                        likes
-                        comments
                         caption
-                        localFile {
+                        media_url
+                        localImage {
                             childImageSharp {
                                 fluid(maxWidth: 400, maxHeight: 400) {
                                     ...GatsbyImageSharpFluid
@@ -55,11 +53,11 @@ const Instagram = () => {
     return (
         <Wrapper>
             {
-                data.allInstaNode.edges.map((edge) => {
+                data.allInstagramContent.edges.map((edge) => {
                     return (
                         <ImageOuterWrapper>
                             <ImageWrapper to={`/insta/${edge.node.id}`} state={{ modal: true }}>
-                                <Img fluid={edge.node.localFile.childImageSharp.fluid} />
+                                <Img fluid={edge.node.localImage.childImageSharp.fluid} />
                             </ImageWrapper>
                         </ImageOuterWrapper>
                     )
