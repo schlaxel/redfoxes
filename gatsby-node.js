@@ -53,8 +53,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       }, // additional data can be passed via context
     })
   });
-  console.log(result.data.allInstaNode.edges);
-  result.data.allInstaNode.edges.forEach(({ node }) => {
+  result.data.allInstagramContent.edges.forEach(({ node }) => {
     createPage({
       path: `/insta/${node.id}`,
       component: instaTemplate,
