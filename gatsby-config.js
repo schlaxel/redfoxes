@@ -77,19 +77,12 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
+      resolve: 'gatsby-plugin-web-font-loader',
       options: {
-        fonts: [
-          {
-            family: `Fjalla One`,
-            variants: [`400`]
-          },
-          {
-            family: 'Source Sans Pro',
-            variants: ['400']
-          }
-        ],
-      },
+        google: {
+          families: ['Fjalla One:400', 'Source Sans Pro:400']
+        }
+      }
     },
     {
       resolve: `gatsby-source-instagram-all`,
