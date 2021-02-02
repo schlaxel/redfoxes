@@ -87,7 +87,7 @@ module.exports = {
     {
       resolve: `gatsby-source-instagram-all`,
       options: {
-        access_token: "IGQVJVLUlEMG53TGlwdzE2am4yVmdyZA2dTMnNMb0p4RThCcXR0UEFmNXRRazJxZATJRb0JvMkFlMXBOYW1GX0FBMmRKOXAxeTh0RDBjNWpacHEtOEJyWHlYVWo5UDJDU0d3bTR4Y3ZAENjR3Wkx3ODNtZAgZDZD"
+        access_token: "IGQVJWYzZAvemRaRzQwZAlQ0clBTdU9hMHg2OGJUbzZAKbHpEZAjFaakZAoejRid2NnbEtYUXBOZAFJZAeUtrT0ZANYmozR3pQbnlfcFMwT21Fa1o2RHhOWEswOWJfNV9WMC0tbTJfcW1SOUljUHRUSzd0UjNxMwZDZD"
       }
     },
     {

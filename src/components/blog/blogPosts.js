@@ -1,6 +1,5 @@
 import React from 'react';
 import styled from 'styled-components';
-import C from '../../colors';
 import { graphql, useStaticQuery } from 'gatsby';
 import SinglePost from './singlePost';
 

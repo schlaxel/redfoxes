@@ -1,6 +1,5 @@
 import React from 'react';
 import SiteWrapper from '../components/siteWrapper';
-import PageHeader from '../components/pageHeader';
 import BackBtn from '../components/backBtn';
 import styled from 'styled-components';
 import { graphql } from 'gatsby';
